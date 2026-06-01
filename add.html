@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product | Naqaa Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Naqaa <span>Admin</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="view-admin.html"><i class="fas fa-arrow-left"></i> Back to Dashboard</a></li>
+                <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add New Product</h2>
+            <form id="addProductForm">
+                <label for="prodName">Product Name:</label>
+                <input type="text" id="prodName" placeholder="e.g., Golden Purity Perfume" required>
+                
+                <label for="prodPrice">Price ($):</label>
+                <input type="number" id="prodPrice" min="1" placeholder="e.g., 45" required>
+                
+                <label for="prodImage">Product Image URL:</label>
+                <input type="url" id="prodImage" placeholder="https://example.com/image.jpg" required>
+                
+                <button type="submit" class="btn-primary" style="width: 100%; padding: 14px; font-size: 16px;">Save & Publish Product</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Naqaa Cosmetics Store. Admin Central Dashboard. Prepared by Elyas and Team.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
