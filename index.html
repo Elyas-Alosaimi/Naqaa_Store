@@ -4,57 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naqaa | Cosmetics Store</title>
-    <!-- ربط مكتبة الأيقونات الفاخرة Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- ربط ملف التنسيقات الموحد الشامل الخاص بنا -->
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
 
-    <!-- الترويسة وقائمة التنقل العلوية الثابتة (Flexbox Layout) -->
     <header>
         <div class="logo">
             <h1>Naqaa <span>Store</span></h1>
         </div>
         <nav>
             <ul>
-                <!-- تبويبات حركية تتنقل بين الأقسام بمرونة بدون تحديث الصفحة -->
                 <li><a onclick="switchTab('home-tab')"><i class="fas fa-shopping-bag"></i> Store</a></li>
                 <li><a onclick="switchTab('about-tab')"><i class="fas fa-users"></i> About Us</a></li>
-                <!-- رابط مباشر يأخذك لصفحة تسجيل الدخول المنفصلة للمدير -->
                 <li><a href="login.html"><i class="fas fa-user-shield"></i> Admin Panel</a></li>
-                <!-- زر تبديل الوضع الليلي والنهاري الموحد -->
                 <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- ======================================================== -->
-        <!-- التبويب الأول: الواجهة الرئيسية وعرض المنتجات للزبائن -->
-        <!-- ======================================================== -->
         <div id="home-tab" class="tab-content">
-            <!-- القسم الإعلاني الترحيبي الجذاب (Hero Section) -->
             <section style="text-align: center; padding: 70px 20px; background-color: var(--accent-color); border-radius: 0 0 20px 20px; margin-bottom: 40px;">
                 <h2 style="color: var(--primary-color); font-size: 38px; margin-bottom: 12px; font-weight: 800;">Discover Your True Beauty</h2>
                 <p style="font-size: 18px; margin-bottom: 25px; color: var(--primary-color); font-weight: 500;">Explore our exclusive collection of cosmetics and skincare products.</p>
             </section>
 
-            <!-- قسم عرض شبكة المنتجات الديناميكية -->
             <section style="padding: 0 20px 40px 20px;">
                 <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 10px; font-size: 28px;">Our Featured Products</h2>
                 <p style="text-align: center; color: #777; margin-bottom: 30px; font-size: 15px;">Handpicked high-quality cosmetics tailored just for you</p>
                 
-                <!-- الحاوية الذكية التي ستقوم الجافاسكريبت بحقن بطاقات المنتجات بداخلها -->
                 <div id="customer-products-container" class="products-grid">
-                    <!-- المنتجات المخزنة ستظهر هنا تلقائياً بجمالية تامة -->
                 </div>
             </section>
         </div>
-
-        <!-- ======================================================== -->
-        <!-- التبويب الثاني: قسم من نحن والتقرير الأكاديمي المدمج -->
-        <!-- ======================================================== -->
         <div id="about-tab" class="tab-content" style="display: none;">
             <section class="table-container">
                 <h2>About Our Project & Report</h2>
@@ -66,7 +49,6 @@
                     operations dynamically through Local Storage, achieving seamless interactivity without relying on backend databases.
                 </p>
 
-                <!-- زر فتح وعرض التقرير الأكاديمي PDF -->
                 <div style="margin-bottom: 35px; text-align: left;">
                     <a href="documents/Project_Report.pdf" target="_blank" class="btn-primary" style="text-decoration: none; padding: 10px 22px; font-size: 14px; display: inline-block; border-radius: 4px; background-color: var(--primary-color); color: #fff; font-weight: bold; transition: background 0.3s ease;">
                         <i class="fas fa-file-pdf"></i> View Full Academic Report (PDF)
@@ -112,12 +94,10 @@
         </div>
     </main>
 
-    <!-- التذييل الموحد الثابت (Footer) -->
     <footer>
         <p>&copy; 2026 Naqaa Cosmetics Store. All Rights Reserved. Prepared by Elyas Al_Osaimi & Islam Adel.</p>
     </footer>
 
-    <!-- ربط ملف العقل البرمجي الموحد الشامل في نهاية الصفحة لسرعة التحميل -->
     <script src="js/main.js"></script>
 </body>
 </html>
