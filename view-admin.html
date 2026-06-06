@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard | Naqaa Store</title>
-    <!-- ربط مكتبة الأيقونات لظهور أشكال سلة المهملات وقلم التعديل -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
-    <!-- ربط ملف التنسيقات الموحد الشامل الخاص بنا -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- الترويسة وقائمة التنقل العلوية الخاصة بلوحة الإدارة (Flexbox) -->
     <header>
         <div class="logo">
             <h1>Naqaa <span>Admin</span></h1>
@@ -19,18 +16,14 @@
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-store"></i> Customer Store</a></li>
-                <!-- رابط يأخذ المدير لصفحة إضافة منتج جديد المستقلة -->
                 <li><a href="add.html"><i class="fas fa-plus-circle"></i> Add New Product</a></li>
-                <!-- زر تسجيل الخروج برمجناه ليمسح حالة الاتصال ويعيدك للرئيسية -->
                 <li><a id="logoutBtn" style="color: #dc3545;"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-                <!-- زر تبديل الوضع الليلي والنهاري الموحد -->
                 <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- حاوية الجدول المنسقة بالـ CSS الشامل لتكون متجاوبة مع الجوال -->
         <section class="table-container" style="margin-top: 50px;">
             <h2>Products Management Center</h2>
             <p style="color: #666; margin-bottom: 20px; font-size: 14px;">Review, update, or remove products from the store inventory in real-time.</p>
@@ -44,20 +37,16 @@
                         <th>Control Actions</th>
                     </tr>
                 </thead>
-                <!-- المعرّف (ID) هنا هو الأساس لأن الجافاسكريبت سيحقن صفوف المنتجات وأزرار الحذف بداخله -->
                 <tbody id="admin-table-body">
-                    <!-- JavaScript will dynamically generate table rows here -->
                 </tbody>
             </table>
         </section>
     </main>
 
-    <!-- التذييل الموحد الثابت للوحة التحكم -->
     <footer>
         <p>&copy; 2026 Naqaa Cosmetics Store. Admin Central Dashboard. Prepared by Elyas Al_Osaimi & Islam Adel.</p>
     </footer>
 
-    <!-- ربط ملف العقل البرمجي الموحد الشامل -->
     <script src="js/main.js"></script>
 </body>
 </html>
